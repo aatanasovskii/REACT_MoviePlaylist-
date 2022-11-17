@@ -1,0 +1,148 @@
+body {
+  background: #7E8d85;
+}
+
+header {
+  position: fixed;
+  width: 300px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #3c493f;
+  color: white;
+  border-right: 1px solid white;
+}
+
+main {
+  margin-left: 360px;
+  padding: 20px;
+}
+
+.logo {
+  color: white;
+  text-align: center;
+  margin: 40px;
+  font-family: 'Mate SC', serif;
+  font-size: 40px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.header-actions {
+  position: absolute;
+  bottom: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.header-search {
+  margin-bottom: 10px;;
+}
+
+.playlist-collection ul {
+  margin-bottom: 40px;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.playlist-collection li {
+  list-style: none;
+}
+
+.playlist-collection li {
+  border-top: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.playlist-collection a  {
+  text-decoration: none;
+  color: white;
+  padding: 10px 0;
+  display: block;
+}
+
+.playlist-collection li:last-child {
+  border-bottom: 1px solid white;
+}
+
+.playlist-collection li.selected {
+  font-weight: bold;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  color: black;
+  text-decoration: none;
+}
+
+.primary-button {
+  background-color: #a2e3c4;
+}
+
+.secondary-button {
+  background-color: red;
+}
+
+input[type="text"] {
+  padding: 9px;
+}
+
+.search-input {
+  min-width: 300px;
+}
+
+.movie-list li.selected img {
+  border: 4px solid #a2e3c4; 
+}
+
+.movie-list li.selected {
+  color: #a2e3c4;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+}
+
+.movie-list li {
+  padding: 10px;
+  max-width: 16.66%;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+}
+
+.movie-overlay {
+  display: none;
+}
+
+.movie-list li:hover .movie-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: black;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-overlay i {
+  font-size: 40px;
+  color: white;
+}
+
+.movie-list li img {
+  max-width: 100%;
+}
